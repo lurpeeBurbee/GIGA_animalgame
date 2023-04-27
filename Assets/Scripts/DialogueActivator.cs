@@ -5,8 +5,7 @@ public class DialogueActivator : MonoBehaviour, Interactable
 {
     [SerializeField] private DialogueObject dialogueObject;
 
-    private void OnTriggerEnter2D(Collider2D other
-        )
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && other.TryGetComponent(out PlayerController playerController))
         {
